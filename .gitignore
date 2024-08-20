@@ -1,3 +1,35 @@
+# Aaron's adds:
+# Ignore Spyder stuff:
+.spyproject/
+
+# Jupyter stuff
+.ipynb_checkpoints/
+
+# don't store data
+notebooks/data/
+
+# mac stuff
+*.DS_Store
+
+# Ignore the pycache directory
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore json files
+*.json
+
+# Ignore the db file if you have one
+*.db
+
+# Ignore all .pyc files (compiled python files)
+*.pyc
+
+# Ingnore all .vscode files
+.vscode/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
