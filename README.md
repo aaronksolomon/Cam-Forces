@@ -10,6 +10,6 @@ This project was prompted by a question from Ryan Jenks of HowNot2:
 
 ### Progress So Far
 
-- **Jupyter Lab File:** `Camming_Forces.ipynb` computes a baseline expected force for a basic SLCD. The file is also available in [HTML](./Camming_Forces.html) and [PDF](./Camming_Forces.pdf) formats.
+- **Jupyter Lab File:** `Camming_Forces.ipynb` computes a baseline expected force for a basic SLCD. The file is also available in [HTML](./camming_forces.html) and [PDF](./camming_forces.pdf) formats.
 
 - **References:** A `REFERENCE.md` file has been created to hold links and other materials that folks have already shared.

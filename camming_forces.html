@@ -7547,12 +7547,12 @@ $$
 F_{c,x} = F_c \cdot \cos(\theta)
 $$</li>
 <li><p><strong>Downward Component $ F_{c,y} $</strong>:</p>
-<p>The downward component of $ F_c $ must be such that it balances F_p, as already seen,</p>
+<p>The upward component of $F_w$ must be such that it balances $F_p$, as already seen. $F_w$ and $F_c$ are equal in magnitude and opposite in direction so:</p>
 $$
-F_{c,y} = \frac{F_p}{2} 
+F_{c,y} = F_{w,y} = \frac{F_p}{2} 
 $$</li>
 </ul>
-<p>To find the outward component, substitute the expression for $ F_c $ from above:</p>
+<p>To find the outward component in terms of $F_p$, substitute the expression for $ F_c $ from above:</p>
 $$
 F_c = \frac{F_p}{2 \cdot \sin(\theta)}
 $$<p>giving:</p>
@@ -7560,10 +7560,6 @@ $$<p>giving:</p>
 <li><p><strong>Outward Component</strong>:</p>
 $$
 F_{c,x} = \frac{F_p}{2 \cdot \sin(\theta)} \cdot \cos(\theta) = \frac{F_p \cdot \cos(\theta)}{2 \cdot \sin(\theta)} = \frac{F_p}{2 \cdot \tan(\theta)}
-$$</li>
-<li><p><strong>Downward Component</strong>:</p>
-$$
-F_{c,y} =\frac{F_p}{2}
 $$</li>
 </ul>
 <p>Thus, the force $ F_c $ is decomposed into:</p>
@@ -7603,9 +7599,9 @@ $$</li>
 <span class="n">F_lobe</span> <span class="o">=</span> <span class="n">F_cx</span> <span class="o">/</span> <span class="mi">2</span>
 <span class="n">F_x_total</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">F_cx</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Total outward expansive force: </span><span class="si">{</span><span class="n">F_x_total</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kn"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Force on each surface: F_cx = </span><span class="si">{</span><span class="n">F_cx</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kn"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Force on each lobe: </span><span class="si">{</span><span class="n">F_lobe</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kn"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"F_x_total = </span><span class="si">{</span><span class="n">F_x_total</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kn"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"F_cx = </span><span class="si">{</span><span class="n">F_cx</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kn"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"F_lobe = </span><span class="si">{</span><span class="n">F_lobe</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kn"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7618,9 +7614,9 @@ $$</li>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Total outward expansive force: 7.73 kn
-Force on each surface: F_cx = 3.87 kn
-Force on each lobe: 1.93 kn
+<pre>F_x_total = 7.73 kn
+F_cx = 3.87 kn
+F_lobe = 1.93 kn
 </pre>
 </div>
 </div>
@@ -7633,12 +7629,16 @@ Force on each lobe: 1.93 kn
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h4 id="For-$F_p-=-2.0-%5Ctext%7B-kn%7D$,-with-a-cam-angle-of-$%5Ctheta=14.5%5E%5Ccirc$-(BD-C4-Cam)">For $F_p = 2.0 \text{ kn}$, with a cam angle of $\theta=14.5^\circ$ (BD C4 Cam)<a class="anchor-link" href="#For-$F_p-=-2.0-%5Ctext%7B-kn%7D$,-with-a-cam-angle-of-$%5Ctheta=14.5%5E%5Ccirc$-(BD-C4-Cam)">¶</a></h4><h4 id="The-force-on-each-side-of-the-surface-is-predicted-to-be">The force on each side of the surface is predicted to be<a class="anchor-link" href="#The-force-on-each-side-of-the-surface-is-predicted-to-be">¶</a></h4>$$
+<p>For $F_p = 2.0 \text{ kn}$, with a cam angle of $\theta=14.5^\circ$ (BD C4 Cam)</p>
+<p>The force on each side of the surface is predicted to be
+$$
 F_{c,x} = 3.87 \text{ kn  (} 1.93 \text{ kn per lobe)}
-$$<h4 id="The-total-expansive-force-would-be">The total expansive force would be<a class="anchor-link" href="#The-total-expansive-force-would-be">¶</a></h4>$$
+$$</p>
+<p>The total expansive force would be
+$$
 F_{\text{total}} = 7.73 \text{ kn}
-$$<hr/>
+$$</p>
+<hr/>
 </div>
 </div>
 </div>
@@ -7710,6 +7710,7 @@ $$<hr/>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
 <h3 id="$F_%7Bc,x%7D$-and-$F_%7Bc,y%7D$-as-functions-of-$%5Ctheta$,-with-$F_p-=-2$-kn">$F_{c,x}$ and $F_{c,y}$ as functions of $\theta$, with $F_p = 2$ kn<a class="anchor-link" href="#$F_%7Bc,x%7D$-and-$F_%7Bc,y%7D$-as-functions-of-$%5Ctheta$,-with-$F_p-=-2$-kn">¶</a></h3>
 </div>
 </div>
@@ -7769,6 +7770,7 @@ $$<hr/>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
 <h3 id="Force-Multiplier:-Ratio-of-$2F_%7Bc,y%7D$-to-$F_p$">Force Multiplier: Ratio of $2F_{c,y}$ to $F_p$<a class="anchor-link" href="#Force-Multiplier:-Ratio-of-$2F_%7Bc,y%7D$-to-$F_p$">¶</a></h3><blockquote>
 <p><em>Thanks to @Tim Parkin</em></p>
 </blockquote>
@@ -7827,6 +7829,60 @@ $$<hr/>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h3 id="Force-multiplier-for-$13.75%5E%5Ccirc$">Force multiplier for $13.75^\circ$<a class="anchor-link" href="#Force-multiplier-for-$13.75%5E%5Ccirc$">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># calculate the force multiplier for 13.75 degree cam angle</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mf">13.75</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="si">:</span><span class="s2">.2</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4.1
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The force multiplier for $\theta = 13.75^\circ$ is 4.1</p>
+<p>This implies that the total outward force will be about 4 times the downward force.</p>
+<hr/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Observations-and-Commentary">Observations and Commentary<a class="anchor-link" href="#Observations-and-Commentary">¶</a></h3><h4 id="Force-Distribution-and-Balance">Force Distribution and Balance<a class="anchor-link" href="#Force-Distribution-and-Balance">¶</a></h4><ul>
 <li>There is a simple relationship between the applied force $ F_p $, the angle $ \theta $ of the cam arms, and the resulting forces $ F_{c,x} $ and $ F_{c,y} $.</li>
 <li>The vertical components of the forces $ F_{c,y} $ must balance the downward force $ F_p $ to ensure static equilibrium.</li>
@@ -7836,7 +7892,7 @@ $$<hr/>
 <h4 id="Behavior-as-$-%5Ctheta-$-Approaches-Extremes">Behavior as $ \theta $ Approaches Extremes<a class="anchor-link" href="#Behavior-as-$-%5Ctheta-$-Approaches-Extremes">¶</a></h4><ul>
 <li>When $ \theta $ approaches zero, the system exhibits a dramatic increase in the outward force $ F_{c,x} $. This suggests that a cam with too small a camming angle may create too great an outward force (either deforming/destroying cam or deforming/breaking rock surface, potentially causing failure of placement).</li>
 <li>Conversely, as $ \theta $ increases (steeper camming angle), the outward force diminishes, this in turn would reduce the available friction force to maintain cam placement.</li>
-<li>This suggest that there may be an ideal camming angle. From a cursory look at modern Black Diamond C4 cams with a double axle, it appears that the contact point with the surface remains approximately constant (perhaps $10^\circ-20^\circ$) throughout the camming range due to the cam lobe shape and axle offset. It appears that there may be an ideal camming angle which generates proper force to maintain friction contact with the rock and counteract the downward put.</li>
+<li>This suggest that there may be an ideal camming angle. From a cursory look at modern Black Diamond C4 cams with a double axle, it seems clear that they are designed with a logrithmic spiral such that the contact point with the surface remains approximately constant throughout the camming range due to the cam lobe shape. It appears that the choice of camming angle by designers is a trade off over expansive range of the cam and amount of force mulitplication which the cam offers to increase frictional forces and counteract downward pull.</li>
 </ul>
 <h4 id="Considering-Four-Lobes">Considering Four Lobes<a class="anchor-link" href="#Considering-Four-Lobes">¶</a></h4><ul>
 <li><p>The initial analysis focused on 2 lobes to capture the basic mechanics. In a four-lobed cam, the applied force $F_p$ is distributed among all four lobes. In the case of a Metolius TCU, a tri-lobed cam, the factor might be more complex, as the central wider cam must generate 1/2 the outward force load, while each of the two side lobes will generate 1/4 of the outward force load (to maintain the static equilibrium condition in the $x$ plane). This may be why Metolius makes the central cam wider!</p>
@@ -7861,7 +7917,7 @@ The force along each cam arm $F_{\text{lobe}}$ would be:</p>
 </li>
 </ul>
 <h4 id="Considering-Friction-Forces">Considering Friction Forces<a class="anchor-link" href="#Considering-Friction-Forces">¶</a></h4><ul>
-<li><p>In the initial analysis, it was assumed that there was no slipping at the contact points between the cam lobes and the rock surface. However, in reality, friction plays a crucial role in preventing the cam from slipping.</p>
+<li><p>In the initial analysis, it was assumed that there was no slipping at the contact points between the cam lobes and the rock surface, that they acted like fixed pivot points. However, in reality, it is friction that plays the crucial role in preventing a cam from slipping. For example, imagine a frictionless surface--the cam will simply slide out (assuming parallel sided placement).</p>
 </li>
 <li><p>The outward force $F_{c,x}$ exerted by the cam lobes against the rock surface generates a normal force and hence a frictional force that resists slipping. The maximum frictional force that can be achieved (using the simple normal force and coefficient model) is:</p>
 $$
@@ -7870,9 +7926,9 @@ $$<p>where $\mu$ is the coefficient of friction between the cam lobes and the ro
 </li>
 <li><p>For a cam to remain securely in place, the frictional force on each lobe must be greater than or equal to the fraction of the force $F_p$ that each lobe is counteracting. One slipping begins, it may lead to further failure, however it may also lead to the cam reaching a more stable position. The complexities of cam placement!</p>
 </li>
-<li><p>This highlights the importance of both the outward force $F_{c,x}$ and the coefficient of friction $\mu$ in ensuring the cam's effectiveness. As the camming angle $\theta$ increases, the outward force and therefore frictional force also decreases. Understanding the frictional properties of the contact surface and dependence on camming angle $\theta$ are critical to maximizing the cam's holding power.</p>
+<li><p>This highlights the importance of both the outward force $F_{c,x}$ and the coefficient of friction $\mu$ in ensuring the cam's effectiveness. As the camming angle $\theta$ decreases, the outward force, and therefore frictional force, increases. Understanding the frictional properties of the contact surface and the dependence on camming angle $\theta$ to multiplicatively increase normal force, are critical to maximizing the cam's holding power.</p>
 </li>
-<li><p>It is important to note that the degree of cam contraction (open to fully cammed) is not modelled here, and given that a cam may maintain a fairly constant contact angle, the degree of cam contraction (e.g. not cammed to fully cammed) seems to mostly affect the security of the placement, or the amount of reserve camming action that is available.</p>
+<li><p>It is important to note that the degree of cam contraction (open to fully cammed) is not modelled here, and given that a cams are typically designed to maintain a fairly constant contact angle, the degree of cam contraction (e.g. not cammed to fully cammed) seems to mostly affect the security of the placement, or the amount of reserve camming action that is available.</p>
 </li>
 </ul>
 <h4 id="Cam-Design-Implications">Cam Design Implications<a class="anchor-link" href="#Cam-Design-Implications">¶</a></h4><ul>
@@ -7891,16 +7947,6 @@ $$<p>where $\mu$ is the coefficient of friction between the cam lobes and the ro
 <li>Understanding how the surface of the lobes interact with the surface of the rock would be interesting, vs. just using a point model: where the "teeth" come in, and other factors.</li>
 <li>Comparing smaller and larger cams of course would be interesting.</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
