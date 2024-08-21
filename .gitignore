@@ -1,6 +1,4 @@
 # Aaron's adds:
-# Ignore Spyder stuff:
-.spyproject/
 
 # Jupyter stuff
 .ipynb_checkpoints/
@@ -29,6 +27,8 @@ __pycache__/
 # Ingnore all .vscode files
 .vscode/
 
+# Ignore sandbox
+sandbox/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
