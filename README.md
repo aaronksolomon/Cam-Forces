@@ -10,4 +10,8 @@ After 3 years, we are finally getting to test the outward force of gear.  While 
 Let's start this discussion here in discord because we have another important step designing the experiment after we set the baseline of what we hypothesize.
 "
 
-So far: A Jupyter Lab file "Cam Forces.ipynb" that computes a baseline expected force for a basic SLCD
+So far:
+
+One Jupyter Lab file **camming Forces.ipynb** that computes a baseline expected force for a basic SLCD. Also it's associated HTML version and PDF version too.
+
+Created a refrences file to hold link and other materials that folks have already shared.
