@@ -7482,11 +7482,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Force-Analysis-for-Active-Cams-(SLCD)">Force Analysis for Active Cams (SLCD)<a class="anchor-link" href="#Force-Analysis-for-Active-Cams-(SLCD)">¶</a></h1><h3 id="Summary-of-analysis">Summary of analysis<a class="anchor-link" href="#Summary-of-analysis">¶</a></h3><p>A simplified analysis of the camming forces for an active Spring Loaded Caming Device (SLCD), focusing on the relationship between the applied downward force $F_p$, the camming angle $\theta$ (which measures the angle from the pivot point to the point of contact on the surface), and the resulting outward force $F_{c,x}$, assuming no slipping. It was found that as the camming angle $\theta$  decreases, the outward force $F_{c,x}$ increases significantly, and thus should increase frictional resistance against the rock surface. The outward expansive force (on each surface of contact) is given by: 
+<h1 id="Force-Analysis-for-Active-Cams-(SLCD)">Force Analysis for Active Cams (SLCD)<a class="anchor-link" href="#Force-Analysis-for-Active-Cams-(SLCD)">¶</a></h1><h3 id="Summary-of-analysis">Summary of analysis<a class="anchor-link" href="#Summary-of-analysis">¶</a></h3><p>A simplified analysis of the camming forces for an active Spring Loaded Caming Device (SLCD), focusing on the relationship between the applied downward force $F_p$, the camming angle $\theta$ (which measures the angle from the pivot point to the point of contact on the surface), and the resulting outward force $F_{c,x}$, assuming no slipping. It was found that as the camming angle $\theta$  decreases, the outward force $F_{c,x}$ increases significantly, and thus should increase frictional resistance against the surface of contact. The outward expansive force (on each surface of contact) is given by: 
 $$
 F_{c,x} = \frac{F_p}{2 \cdot \tan(\theta)}
 $$ 
-This assumes a cam in a symmetric parallel sided placement. The total expansive force is would be $2$ times this, and for a four lobed cam, each lobe would generate $1/2$ of $F_{c,x}$ or $1/4$ of the total expansive force. The outward force varies proportionately to the downward force $F_p$ and inversly proportionally to $\tan(\theta)$. It seems that generally cams are designed with a logrithmic spiral shape to maintain a consistent camming angle throughout range of retraction. For Black Diamond cams this angle is $14.5^\circ$ (see <em><a href="https://www.ukclimbing.com/gear/climbing/protection/black_diamond_camalot_c4-12331">UKC: Black Diamond C4 review</a></em>). Considerations of when slipping will occur based on friction are considered at the close.</p>
+This assumes a cam in a symmetric parallel sided placement. The total expansive force would be $2$ times this, and for a four lobed cam, each lobe would generate $1/2$ of $F_{c,x}$ or $1/4$ of the total expansive force. The outward force varies proportionately to the downward force $F_p$ and inversly proportionally to $\tan(\theta)$. It seems that generally cams are designed with a logrithmic spiral shape to maintain a consistent camming angle throughout range of retraction. For Black Diamond cams this angle is $14.5^\circ$ (see <em><a href="https://www.ukclimbing.com/gear/climbing/protection/black_diamond_camalot_c4-12331">UKC: Black Diamond C4 review</a></em>). Considerations of when slipping will occur based on friction are considered at the close.</p>
 <p>The question: <em>What is the force on the rock if we pull down with 2 kn?</em> can be answered theoretically as $3.87$ kn (on each side of the surface) or $7.73$ kn of total outward force for a Black Diamond C4 Cam.</p>
 </div>
 </div>
@@ -7518,22 +7518,22 @@ This assumes a cam in a symmetric parallel sided placement. The total expansive 
 <h3 id="Assumptions">Assumptions<a class="anchor-link" href="#Assumptions">¶</a></h3><ul>
 <li>The placement surfaces are parallel and immovable; they cannot translate or rotate. (In reality, the possibility of surface (rock or other material) failure or deformation exists.)</li>
 <li>A simplified cam arm (straight line) is used to model a cam lobe. This should be a decent approximation given a rigid cam lobe.</li>
-<li>The cam rotation axis is assumed to be at the center where the force is applied. For offset double axle cams, the force distribution is offset, however assuming a rigid structure, this force will translate to the cam pivot point and the analysis will be unchanged (if we measure the camming angle from cam axle to where the cam lobe meets rock surface).</li>
+<li>The cam rotation axis is assumed to be at the center where the force is applied. For offset double axle cams, the force distribution is offset, however assuming a rigid structure, this force will translate to the cam pivot point and the analysis will be unchanged (if we measure the camming angle from cam axle to where the cam lobe meets the surface).</li>
 <li>There is no slipping at the contact points between the cam arms and the walls; the contact points are effectively fixed pivots. This is equivalent to perfect or infinite friction.</li>
-<li>The cam arms are assumed to make point contact with the rock. In reality there will be a surface zone of contact and pressure forces over that surface will be distributed in potentially complex ways.</li>
-<li>We begin by studying a simplified two lobe system. Extending to four lobes is considered is straightforward and added in the following section.</li>
+<li>The cam arms are assumed to make point contact with the surfaces. In reality there will be a surface zone of contact and pressure forces over that surface will be distributed in potentially complex ways.</li>
+<li>We begin by studying a simplified two lobe system. Extending to four lobes is straightforward and added a following section.</li>
 <li>The cam arms (and other cam components) are rigid and incompressible, meaning their length remains constant and they cannot deform.</li>
 <li>The system is symmetric, so the forces on the left and right cam arms are equal in magnitude.</li>
 <li>The cam arms remain attached at the central point where the force $F_p$ is applied.</li>
 <li>The force $F_p$ is applied directly downward at the central point where the cam arms meet.</li>
 </ul>
-<h4 id="Horizontal-(Outward)-Force-Balance">Horizontal (Outward) Force Balance<a class="anchor-link" href="#Horizontal-(Outward)-Force-Balance">¶</a></h4><p>The horizontal component of the force exerted by the rock surface on each cam arm is:</p>
+<h4 id="Horizontal-(Outward)-Force-Balance">Horizontal (Outward) Force Balance<a class="anchor-link" href="#Horizontal-(Outward)-Force-Balance">¶</a></h4><p>The horizontal component of the force exerted by the surface on each cam arm is:</p>
 $$
 F_{w,x} = F_c \cdot \cos(\theta)
 $$<p>For static equilibrium, the horizontal components on both sides must be equal in magnitude:</p>
 $$
 F_{w,x,\text{left}} = F_{w,x,\text{right}}
-$$<h4 id="Vertical-(Downward)-Force-Balance">Vertical (Downward) Force Balance<a class="anchor-link" href="#Vertical-(Downward)-Force-Balance">¶</a></h4><p>The vertical component of the force exerted by the rock surface on each cam arm is:</p>
+$$<h4 id="Vertical-(Downward)-Force-Balance">Vertical (Downward) Force Balance<a class="anchor-link" href="#Vertical-(Downward)-Force-Balance">¶</a></h4><p>The vertical component of the force exerted by the surface on each cam arm is:</p>
 $$
 F_{w,y} = F_c \cdot \sin(\theta)
 $$<p>For static equilibrium, the sum of the vertical components must balance the downward force $F_p$:</p>
@@ -7612,7 +7612,7 @@ $$</li>
 <span class="n">theta_degrees</span> <span class="o">=</span> <span class="mf">14.5</span>
 <span class="n">theta</span> <span class="o">=</span> <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">theta_degrees</span><span class="p">)</span> <span class="c1"># set theta to 15 degrees. </span>
 <span class="n">F_p</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># set the force to 2kn</span>
-<span class="n">F_cx</span> <span class="o">=</span> <span class="n">F_p</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span> <span class="c1"># calculate F_cx on the rock</span>
+<span class="n">F_cx</span> <span class="o">=</span> <span class="n">F_p</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span> <span class="c1"># calculate F_cx on the surface of contact</span>
 <span class="n">F_lobe</span> <span class="o">=</span> <span class="n">F_cx</span> <span class="o">/</span> <span class="mi">2</span>
 <span class="n">F_x_total</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">F_cx</span>
 
@@ -7900,7 +7900,7 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Plot-minimal-coefficient-of-friction-$%5Cmu$-for-nonslipping">Plot minimal coefficient of friction $\mu$ for nonslipping<a class="anchor-link" href="#Plot-minimal-coefficient-of-friction-$%5Cmu$-for-nonslipping">¶</a></h3>
+<h3 id="Minimal-coefficient-of-friction-$%5Cmu$-for-nonslipping">Minimal coefficient of friction $\mu$ for nonslipping<a class="anchor-link" href="#Minimal-coefficient-of-friction-$%5Cmu$-for-nonslipping">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7971,11 +7971,11 @@ $$</p>
 <h3 id="Observations-and-Commentary">Observations and Commentary<a class="anchor-link" href="#Observations-and-Commentary">¶</a></h3><h4 id="Force-Distribution-and-Balance">Force Distribution and Balance<a class="anchor-link" href="#Force-Distribution-and-Balance">¶</a></h4><ul>
 <li>There is a simple relationship between the applied force $ F_p $, the angle $ \theta $ of the cam arms, and the resulting forces $ F_{c,x} $ and $ F_{c,y} $.</li>
 <li>The vertical components of the forces $ F_{c,y} $ must balance the downward force $ F_p $ to ensure static equilibrium.</li>
-<li>The horizontal components $ F_{c,x} $, which exert outward pressure against the rock, are sensitive to the angle $ \theta $. As $ \theta $ decreases, the outward force increases significantly. (Note that the camming angle is <em>NOT</em> the same as the percentage of camming, e.g. from fully open to fully cammed).</li>
+<li>The horizontal components $ F_{c,x} $, which exert outward pressure against the surface, are sensitive to the angle $ \theta $. As $ \theta $ decreases, the outward force increases significantly. (Note that the camming angle is <em>NOT</em> the same as the percentage of camming, e.g. from fully open to fully cammed).</li>
 <li>The amount of camming (between open and fully cammed) only affects the system if it changes the camming angle $\theta$, that is the angle from the pivot point to the point where the lobe contacts the surface it is cammed against.</li>
 </ul>
 <h4 id="Behavior-as-$-%5Ctheta-$-Approaches-Extremes">Behavior as $ \theta $ Approaches Extremes<a class="anchor-link" href="#Behavior-as-$-%5Ctheta-$-Approaches-Extremes">¶</a></h4><ul>
-<li>When $ \theta $ approaches zero, the system exhibits a dramatic increase in the outward force $ F_{c,x} $. This suggests that a cam with too small a camming angle may create too great an outward force (either deforming/destroying cam or deforming/breaking rock surface, potentially causing failure of placement).</li>
+<li>When $ \theta $ approaches zero, the system exhibits a dramatic increase in the outward force $ F_{c,x} $. This suggests that a cam with too small a camming angle may create too great an outward force (either deforming/destroying cam or deforming/breaking the surface, potentially causing failure of placement).</li>
 <li>Conversely, as $ \theta $ increases (steeper camming angle), the outward force diminishes, this in turn would reduce the available friction force to maintain cam placement.</li>
 <li>This suggest that there may be an ideal camming angle. From a cursory look at modern Black Diamond C4 cams with a double axle, it seems clear that they are designed with a logrithmic spiral such that the contact point with the surface remains approximately constant throughout the camming range due to the cam lobe shape. It appears that the choice of camming angle by designers is a trade off over expansive range of the cam and amount of force mulitplication which the cam offers to increase frictional forces and counteract downward pull.</li>
 </ul>
@@ -8002,12 +8002,12 @@ The force along each cam arm $F_{\text{lobe}}$ would be:</p>
 </li>
 </ul>
 <h4 id="Considering-Friction-Forces">Considering Friction Forces<a class="anchor-link" href="#Considering-Friction-Forces">¶</a></h4><ul>
-<li><p>In the initial analysis, it was assumed that there was no slipping at the contact points between the cam lobes and the rock surface, that they acted like fixed pivot points. However, in reality, it is friction that plays the crucial role in preventing a cam from slipping. For example, imagine a frictionless surface--the cam will simply slide out (assuming parallel sided placement).</p>
+<li><p>In the initial analysis, it was assumed that there was no slipping at the contact points between the cam lobes and the surface, that they acted like fixed pivot points. However, in reality, it is friction that plays the crucial role in preventing a cam from slipping. For example, imagine a frictionless surface--the cam will simply slide out (assuming parallel sided placement).</p>
 </li>
-<li><p>The outward force $F_{c,x}$ exerted by the cam lobes against the rock surface generates a normal force and hence a frictional force that resists slipping. The maximum frictional force that can be achieved (using the simple normal force and coefficient model) is:</p>
+<li><p>The outward force $F_{c,x}$ exerted by the cam lobes against the surface generates a normal force and hence a frictional force that resists slipping. The maximum frictional force that can be achieved (using the simple normal force and coefficient model) is:</p>
 $$
 F_{\text{friction}} = \mu \cdot F_{c,x}
-$$<p>where $\mu$ is the coefficient of friction between the cam lobes and the rock surface. It's important to note that if we are dealing with significantly large forces, on the order of 10 kn, this may imply some deformation of materials and other more complex factors than can be captured by this equation. It is however signicant to note that things like water and ice are likely to drastically reduce $\mu$ (all else being equal)!</p>
+$$<p>where $\mu$ is the coefficient of friction between the cam lobes and the surface. It's important to note that if we are dealing with significantly large forces, on the order of 10 kn, this may imply some deformation of materials and other more complex factors than can be captured by this equation. It is however signicant to note that things like water and ice are likely to drastically reduce $\mu$ (all else being equal)!</p>
 </li>
 <li><p>For a cam to remain securely in place, the frictional force on each lobe must be greater than or equal to the fraction of the force $F_p$ that each lobe is counteracting. Once slipping begins, it may lead to further failure, however it may also lead to the cam reaching a more stable position. The complexities of cam placement!</p>
 </li>
@@ -8029,7 +8029,7 @@ $$<p>where $\mu$ is the coefficient of friction between the cam lobes and the ro
 <li>Understanding how the percentage of camming affects the cam behavior remains an interesting question.</li>
 <li>Modeling friction directly to calculate the slipping point of a lobe would be interesting, however the coefficient of friction could be quite complex and could be effectively infinite in the case where there is anything that blocks the cam from moving, such as a pocket or constriction, or sharp protrusion of rock (a crystal) wedged into the metal rib or "tooth" of the cam. Working with uniform surfaces (as much as possible) having known coefficients of friction would be a good way to get started with collecting data. The ribs or "teeth" in cams is definitely something to take into consideration!</li>
 <li>The effects of surface and cam structure deformation under load would be quite interesting though expected to be complex.</li>
-<li>Understanding how the surface of the lobes interact with the surface of the rock would be interesting, vs. just using a point model: where the "teeth" come in, and other factors.</li>
+<li>Understanding how the surface of the lobes interact with the surface (rock or other materials) would be interesting, vs. just using a point model: where the "teeth" come in, and other factors.</li>
 <li>Understanding why a more retracted cam is considered stronger than a less retracted (tipped out, or under-cammed) cam would be interesting, as this is not evident in this model. (Is it actually stronger?)</li>
 <li>Comparing smaller and larger cams of course would be interesting.</li>
 </ul>
