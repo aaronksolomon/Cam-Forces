@@ -10,10 +10,10 @@ This file contains useful links, papers, and other references related to the pro
 - [Miscellaneous](#miscellaneous)
 
 ## Online Resources
-- **[UKC: Black Diamond C4 review](https://www.ukclimbing.com/gear/climbing/protection/black_diamond_camalot_c4-12331)**: An old article (2019) that actually mentions the BD camming angle, $14.5^\circ$ as well as the industry standard, $13.75^\circ$. 
+- **[UKC: Black Diamond C4 review](https://www.ukclimbing.com/gear/climbing/protection/black_diamond_camalot_c4-12331)**: An old article (2019) that actually mentions the BD camming angle, 14.5° as well as the industry standard, 13.75°. 
 >The camming angle of the new Camalot C4 has been maintained at 14.5°, a little higher than the industry 'standard' 13.75°. A camming angle of 14.5° gives you a fractionally bigger range, but also marginally less camming force when the unit is over-cammed or tipped out. Neither of these pros or cons are significant enough to get too excited about.
 
-Whether this larger angle actually effects the camming force for over- or under- cammed placements is an interesting question. I don't see it in the physics. It give marginally less camming or frictional force *overall* at $14.5^\circ$
+Whether this larger angle actually effects the camming force for over- or under- cammed placements is an interesting question. I don't see it in the physics. It give marginally less camming or frictional force *overall* at 14.5°
 
 - **[How Cams Work Part 1 by Wild Country](https://web.archive.org/web/20070629123443/http://www.wildcountry.co.uk/HintsandTips/UnderstandingCams/General/)**: Archived article by Wild Country.
 
