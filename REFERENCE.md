@@ -31,6 +31,12 @@ Whether this larger angle actually effects the camming force for over- or under-
 
 ## Research Papers
 
+- **[MDPI: Study of Optimal Cam Design of Dual-Axle Spring-Loaded Camming Device](https://www.mdpi.com/1996-1944/14/8/1940)** From abstract: 
+
+>This paper focuses on optimizing the internal shape of the dual-axle SLCD cam from the perspective of the weight/stiffness trade-off. For this purpose, two computational models are designed and multi-step topology optimization (TOP) are performed. From the computational models’ point of view, SLCD is considered symmetric and only one cam is optimized and smoothened using parametric curves. Finally, the load-bearing capacity of the new cam design is analyzed. This work is based on practical industry requirements, and the obtained results will be reflected in a new commercial design of SLCD.
+
+- **[TotemCam_Mechanical_Principles.pdf](https://www.totemmt.com/wp-content/uploads/2018/09/TotemCam_Mechanical_Principles.pdf)** Paper by Totem on their cam design.
+
 ## Books
 - **Long, John. (2006). *Climbing Anchors*.** Falcon Guides. Throwing this in just for fun!
   
