@@ -1,4 +1,4 @@
-# Aaron's adds:
+# BEGIN Aaron's adds:
 
 # Jupyter stuff
 .ipynb_checkpoints/
@@ -28,7 +28,9 @@ __pycache__/
 .vscode/
 
 # Ignore sandbox
-sandbox/
+# sandbox/
+
+# END of Aaron's Adds
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
