@@ -14,5 +14,7 @@ This project was prompted by a question from Ryan Jenks of HowNot2:
 
 - **`Triangular_cam_forces.ipynb`** another Jupyter Lab file, computes some forces for a triangular shaped cam attempting to approximate a Tricam, with some big assumptions. Also in [HTML](./triangular_cam_forces.html)
 
+- **`nut_forces.ipynb`** another Jupyter lab file, looks at a simple force calc for a #13 Black Diamond stopper in a crack which matches the nut taper. (Parallel contact). [HTML](./nut_forces.html)
+
 - **References:** A [REFERENCE.md](./REFERENCE.md) hold links and other reference materials that folks have already shared. Please add stuff.
 
