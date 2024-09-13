@@ -7491,7 +7491,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
@@ -7506,7 +7506,7 @@ a.anchor-link {
 
 <span class="c1"># Define the equations</span>
 <span class="n">Ff_eq</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="n">F_f</span><span class="p">,</span> <span class="n">µ</span> <span class="o">*</span> <span class="n">F_n</span><span class="p">)</span>
-<span class="n">balance_eq</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="n">F_f</span> <span class="o">*</span> <span class="n">sp</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">+</span> <span class="n">F_n</span> <span class="o">*</span> <span class="n">sp</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span> <span class="n">F_a</span><span class="p">)</span>
+<span class="n">balance_eq</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">F_f</span> <span class="o">*</span> <span class="n">sp</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">F_n</span> <span class="o">*</span> <span class="n">sp</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span> <span class="n">F_a</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">Ff_eq</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">balance_eq</span><span class="p">)</span>
@@ -7528,7 +7528,7 @@ $\displaystyle F_{f} = F_{n} µ$
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
-$\displaystyle F_{f} \cos{\left(\theta \right)} + F_{n} \sin{\left(\theta \right)} = F_{a}$
+$\displaystyle 2 F_{f} \cos{\left(\theta \right)} + 2 F_{n} \sin{\left(\theta \right)} = F_{a}$
 </div>
 </div>
 </div>
@@ -7538,7 +7538,7 @@ $\displaystyle F_{f} \cos{\left(\theta \right)} + F_{n} \sin{\left(\theta \right
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Solve for Fn</span>
@@ -7555,9 +7555,9 @@ $\displaystyle F_{f} \cos{\left(\theta \right)} + F_{n} \sin{\left(\theta \right
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 <div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex" tabindex="0">
-$\displaystyle \left\{ F_{f} : \frac{F_{a} µ}{µ \cos{\left(\theta \right)} + \sin{\left(\theta \right)}}, \  F_{n} : \frac{F_{a}}{µ \cos{\left(\theta \right)} + \sin{\left(\theta \right)}}\right\}$
+$\displaystyle \left\{ F_{f} : \frac{F_{a} µ}{2 µ \cos{\left(\theta \right)} + 2 \sin{\left(\theta \right)}}, \  F_{n} : \frac{F_{a}}{2 µ \cos{\left(\theta \right)} + 2 \sin{\left(\theta \right)}}\right\}$
 </div>
 </div>
 </div>
@@ -7567,11 +7567,11 @@ $\displaystyle \left\{ F_{f} : \frac{F_{a} µ}{µ \cos{\left(\theta \right)} + \
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Given values</span>
-<span class="n">mu_value</span> <span class="o">=</span> <span class="mf">.5</span>
+<span class="n">mu_value</span> <span class="o">=</span> <span class="mf">.6</span>
 <span class="n">theta_value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mf">5.71</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">Fa_value</span> <span class="o">=</span> <span class="mi">6</span>
 
@@ -7587,7 +7587,7 @@ $\displaystyle \left\{ F_{f} : \frac{F_{a} µ}{µ \cos{\left(\theta \right)} + \
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">subs_dict</span>
@@ -7601,9 +7601,9 @@ $\displaystyle \left\{ F_{f} : \frac{F_{a} µ}{µ \cos{\left(\theta \right)} + \
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex" tabindex="0">
-$\displaystyle \left\{ F_{a} : 6, \  \theta : 0.09966, \  µ : 0.5\right\}$
+$\displaystyle \left\{ F_{a} : 6, \  \theta : 0.09966, \  µ : 0.6\right\}$
 </div>
 </div>
 </div>
@@ -7613,7 +7613,7 @@ $\displaystyle \left\{ F_{a} : 6, \  \theta : 0.09966, \  µ : 0.5\right\}$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">Ff_val</span><span class="p">,</span> <span class="n">Fn_val</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">solution</span><span class="p">[</span><span class="n">F_f</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">subs_dict</span><span class="p">)</span><span class="o">.</span><span class="n">evalf</span><span class="p">()),</span> <span class="nb">float</span><span class="p">(</span><span class="n">solution</span><span class="p">[</span><span class="n">F_n</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">subs_dict</span><span class="p">)</span><span class="o">.</span><span class="n">evalf</span><span class="p">())</span>
@@ -7629,9 +7629,9 @@ $\displaystyle \left\{ F_{a} : 6, \  \theta : 0.09966, \  µ : 0.5\right\}$
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex" tabindex="0">
-$\displaystyle \left( 5.025, \  10.05\right)$
+$\displaystyle \left( 2.5843, \  4.3071\right)$
 </div>
 </div>
 </div>
@@ -7641,7 +7641,7 @@ $\displaystyle \left( 5.025, \  10.05\right)$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">Fn_val</span> <span class="o">/</span> <span class="n">Fa_value</span>
@@ -7655,9 +7655,9 @@ $\displaystyle \left( 5.025, \  10.05\right)$
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex" tabindex="0">
-$\displaystyle 1.675$
+$\displaystyle 0.71785$
 </div>
 </div>
 </div>
